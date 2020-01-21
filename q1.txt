@@ -1,0 +1,168 @@
+
+
+
+
+
+TEST RUN FOR SPICE.trace
+
+SPLIT:
+
+1:
+./cache -s -c4 -b2048 -a1
+Data read hitrate : 0.490362
+Data write hitrate : 1.67712
+Instruction hitrate is : 0.961972
+
+2:
+./cache -s -c8 -b4096 -a1
+Data read hitrate : 0.498782
+Data write hitrate : 0.599357
+Instruction hitrate is : 0.9757
+
+
+3:
+./cache -s -c16 -b8192-a1
+Data Write Miss : 26566
+Data read hitrate : 0.503082
+Data write hitrate : 0.600739
+Instruction hitrate is : 0.981412
+
+
+4:
+./cache -s -c32 -b16384 -a1
+Data read hitrate : 0.553527
+Data write hitrate : 0.604948
+Instruction hitrate is : 0.985384
+
+5:
+./cache -s -c64 -b32768 -a1
+
+Data read hitrate : 0.574609
+Data write hitrate : 0.626574
+Instruction hitrate is : 0.987181
+
+UNIFIED:
+
+1:
+./cache -c4 -b4096 -a1
+Hit Rate : 0.550563
+
+
+2:
+./cache -c32 -b32768 -a1
+
+Hit Rate : 0.556714
+
+
+
+
+
+TEST RUN FOR cc.trace
+
+SPLIT:
+
+1:
+./cache -s -c4 -b2048 -a1
+Data read hitrate : 0.411919
+Data write hitrate : 0.648404
+Instruction hitrate is : 0.968177
+
+2:
+./cache -s -c8 -b4096 -a1
+Data read hitrate : 0.425851
+Data write hitrate : 0.662881
+Instruction hitrate is : 0.975237
+
+
+3:
+./cache -s -c16 -b8192-a1
+
+Data read hitrate : 0.430386
+Data write hitrate : 0.671805
+Instruction hitrate is : 0.980043
+
+
+4:
+./cache -s -c32 -b16384 -a1
+Data read hitrate : 0.472283
+Data write hitrate : 0.696845
+Instruction hitrate is : 0.984852
+
+5:
+./cache -s -c64 -b32768 -a1
+Data read hitrate : 0.482306
+Data write hitrate : 0.699314
+Instruction hitrate is : 0.988038
+
+
+
+UNIFIED:
+
+1:
+./cache -c4 -b4096 -a1
+Hit Rate : 0.499694
+
+
+
+4:
+./cache -c32 -b32768 -a1
+Hit Rate : 0.506926
+
+
+TEST RUN FOR tex.trace
+
+SPLIT:
+
+1:
+./cache -s -c4 -b2048 -a1
+Data read hitrate : 0.542964
+Data write hitrate : 0.642906
+Instruction hitrate is : 0.937496
+
+2:
+./cache -s -c8 -b4096 -a1
+
+Data read hitrate : 0.542964
+Data write hitrate : 0.642906
+Instruction hitrate is : 0.949994
+
+3:
+./cache -s -c16 -b8192-a1
+
+
+Data read hitrate : 0.542964
+Data write hitrate : 0.642906
+Instruction hitrate is : 0.949994
+
+4:
+./cache -s -c32 -b16384 -a1
+
+Data read hitrate : 0.542964
+Data write hitrate : 0.642906
+Instruction hitrate is : 0.974995
+
+5:
+./cache -s -c64 -b32768 -a1
+Data read hitrate : 0.542964
+Data write hitrate : 0.642906
+
+Instruction hitrate is : 0.975005
+
+
+
+UNIFIED:
+
+1:
+./cache -c4 -b4096 -a1
+Hit Rate : 0.399139
+
+4:
+./cache -c32 -b32768 -a1
+Hit Rate : 0.417084
+
+
+
+
+
+
+

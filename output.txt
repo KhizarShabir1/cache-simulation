@@ -1,0 +1,9 @@
+Cache Capacity: 4
+Cache BlockSize: 4096
+Cache Associativity: 1
+Cache Split: 1
+Write Back: 1
+Write Through: 0
+Write Allocate: 1
+Write no-allocate: 0
+Enter filename : 
